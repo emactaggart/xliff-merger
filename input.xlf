@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:mc="multicorpora:xliffeditor2:xliff-extension" version="1.2">
   <file datatype="plaintext" original="ng2.template" source-language="en">
     <body>
-      <trans-unit datatype="html" id="valuations">
+      <trans-unit id="valuations" datatype="html">
         <source xml:space="preserve">Valuations</source>
         <target xml:space="preserve">Évaluations</target>
         <context-group purpose="location">
@@ -16,7 +16,7 @@
           <mc:prop mc:name="Modified date" mc:type="DATE">20180208T194351Z</mc:prop>
         </mc:props>
       </trans-unit>
-      <trans-unit datatype="html" id="login">
+      <trans-unit id="login" datatype="html">
         <source xml:space="preserve">Login</source>
         <target xml:space="preserve">Ouvrir une session</target>
         <note from="description" priority="1">FCC Base: Login</note>
@@ -31,7 +31,7 @@
           <mc:prop mc:name="Modified date" mc:type="DATE">20180208T194353Z</mc:prop>
         </mc:props>
       </trans-unit>
-      <trans-unit datatype="html" id="username">
+      <trans-unit id="username" datatype="html">
         <source xml:space="preserve">Username</source>
         <target xml:space="preserve">Nom d’utilisateur</target>
         <note from="description" priority="1">FCC Base: Login</note>

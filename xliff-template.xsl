@@ -17,7 +17,11 @@
     
     <xsl:template match="node()|@*">
         <xsl:copy>
-            <xsl:apply-templates select="node()|@*"/>
+            <xsl:apply-templates select="node()|@*">
+                <xsl:apply-templates select="@*">
+                    <xsl:sort select="name()"/>
+                </xsl:apply-templates>
+            </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>
 
