@@ -1,11 +1,19 @@
-This node tool sorts xliff file by <trans-unit>s id attributes.
+This node tool formats (indents) and sorts xliff files by <trans-unit> id attributes.
+
+It uses xslt4node library: https://www.npmjs.com/package/xslt4node
 
 The idea is to have a sorted translation file that will help developers to better track changes and/or update the translation file.
 
 Pre-requisites:
 
     Windows: npm install -g windows-build-tools
-    Mac: unknown
+    Java 6 or JNI enabled in /Library/Java/JavaVirtualMachines/<version>.jdk/Contents/Info.plist
+
+        <key>JVMCapabilities</key>
+        <array>
+            ...
+            <string>JNI</string>
+        </array>
 
 Installation:
 
