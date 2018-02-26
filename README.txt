@@ -6,7 +6,17 @@ The idea is to have a sorted translation file that will help developers to bette
 
 Pre-requisites:
 
-    Windows: npm install -g windows-build-tools
+    node-gyp:
+        
+        Windows: npm install -g windows-build-tools
+    
+        Mac: https://github.com/nodejs/node-gyp
+        * python (v2.7 recommended, v3.x.x is not supported) (already installed on Mac OS X)
+        * Xcode
+            - You also need to install the Command Line Tools via Xcode. You can find this under the menu Xcode -> Preferences -> Downloads
+            - This step will install gcc and the related toolchain containing make
+
+    
     Java 6 or JNI enabled in /Library/Java/JavaVirtualMachines/<version>.jdk/Contents/Info.plist
 
         <key>JVMCapabilities</key>
