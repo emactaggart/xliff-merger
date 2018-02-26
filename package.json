@@ -1,0 +1,14 @@
+{
+  "name": "xliff-formatter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "xliff-formatter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ortizr",
+  "license": "ISC",
+  "dependencies": {
+    "xslt4node": "^0.3.2"
+  }
+}
