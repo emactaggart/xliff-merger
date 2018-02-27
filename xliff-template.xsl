@@ -40,8 +40,8 @@
             </xsl:apply-templates> -->
              <!-- <xsl:for-each select="catalog/cd"> -->
         <!-- </xsl:copy> -->
-        <xsl:for-each select="node()">
-            <xsl:value-of select="."/>
+        <xsl:for-each select=".">
+            <xsl:value-of select="node()"/>
         </xsl:for-each>
     </xsl:template>
 

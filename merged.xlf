@@ -2,8 +2,8 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
     <file datatype="plaintext" original="ng2.template" source-language="en">
         <body>
-            <trans-unit datatype="html" id="ruben">Rubénapp/app.component.ts1</trans-unit>
-            <trans-unit datatype="html" id="valuations">Valuationsapp/app.component.ts1</trans-unit>
+            <trans-unit datatype="html" id="ruben">Rubénanother.ts</trans-unit>
+            <trans-unit datatype="html" id="valuations">Valuationsapp/app.component.ts</trans-unit>
         </body>
     </file>
 </xliff>
