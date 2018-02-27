@@ -2,8 +2,8 @@ var xslt4node = require('xslt4node');
 
 var config = {
     xsltPath: 'xliff-template.xsl',
-    sourcePath: 'input.xlf',
-    result: 'output.xlf'
+    sourcePath: 'base.xlf',
+    result: 'merged.xlf'
 };
 
 console.log("Transforming", config.sourcePath, "to", config.result);

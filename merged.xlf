@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file datatype="plaintext" original="ng2.template" source-language="en">
+        <body>
+            <trans-unit datatype="html" id="ruben">
+                <div xmlns:mc="multicorpora:xliffeditor2:xliff-extension" xmlns:xalan="http://xml.apache.org/xslt" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"> OK </div>
+                <div xmlns:mc="multicorpora:xliffeditor2:xliff-extension" xmlns:xalan="http://xml.apache.org/xslt" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"> OK </div>
+            </trans-unit>
+            <trans-unit datatype="html" id="valuations">
+                <div xmlns:mc="multicorpora:xliffeditor2:xliff-extension" xmlns:xalan="http://xml.apache.org/xslt" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"> OK </div>
+                <div xmlns:mc="multicorpora:xliffeditor2:xliff-extension" xmlns:xalan="http://xml.apache.org/xslt" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"> OK </div>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

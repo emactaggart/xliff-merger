@@ -33,4 +33,10 @@
         </xsl:copy>
     </xsl:template>
 
+    <xsl:template match="xliff:trans-unit/*">
+        <!-- <xsl:copy> -->
+           <div> OK </div>
+        <!-- </xsl:copy> -->
+    </xsl:template>
+
 </xsl:stylesheet>

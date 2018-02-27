@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:mc="multicorpora:xliffeditor2:xliff-extension" version="1.2">
+  <file datatype="plaintext" original="ng2.template" source-language="en">
+    <body>
+      <trans-unit datatype="html" id="valuations">
+        <source xml:space="preserve">Valuations</source>
+        <target xml:space="preserve">Évaluations</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <mc:props>
+          <mc:prop mc:name="Created by" mc:type="STRING">abrahamt</mc:prop>
+          <mc:prop mc:name="Created date" mc:type="DATE">20180208T194351Z</mc:prop>
+          <mc:prop mc:name="Modified by" mc:type="STRING">abrahamt</mc:prop>
+          <mc:prop mc:name="Modified date" mc:type="DATE">20180208T194351Z</mc:prop>
+        </mc:props>
+      </trans-unit>
+      <trans-unit datatype="html" id="login">
+        <source xml:space="preserve">Login</source>
+        <target xml:space="preserve">Ouvrir une session</target>
+        <note from="description" priority="1">FCC Base: Login</note>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../../../node_modules/@fcc/angular/lib/lib/template/login/login.component.d.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <mc:props>
+          <mc:prop mc:name="Created by" mc:type="STRING">abrahamt</mc:prop>
+          <mc:prop mc:name="Created date" mc:type="DATE">20180208T194353Z</mc:prop>
+          <mc:prop mc:name="Modified by" mc:type="STRING">abrahamt</mc:prop>
+          <mc:prop mc:name="Modified date" mc:type="DATE">20180208T194353Z</mc:prop>
+        </mc:props>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
