@@ -35,8 +35,14 @@
 
     <xsl:template match="xliff:trans-unit/*">
         <!-- <xsl:copy> -->
-           <div> OK </div>
+            <!-- <xsl:apply-templates select="node()">
+                <xsl:sort select="@id"/>
+            </xsl:apply-templates> -->
+             <!-- <xsl:for-each select="catalog/cd"> -->
         <!-- </xsl:copy> -->
+        <xsl:for-each select="node()">
+            <xsl:value-of select="."/>
+        </xsl:for-each>
     </xsl:template>
 
 </xsl:stylesheet>
