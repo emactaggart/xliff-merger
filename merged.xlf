@@ -2,8 +2,20 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
     <file datatype="plaintext" original="ng2.template" source-language="en">
         <body>
-            <trans-unit datatype="html" id="ruben">Rubénanother.ts</trans-unit>
-            <trans-unit datatype="html" id="valuations">Valuationsapp/app.component.ts</trans-unit>
+            <trans-unit datatype="html" id="ruben">
+                <context-group>
+                    <context context-type="linenumber">77</context>
+                    <context context-type="sourcefile">another.ts</context>
+                </context-group>
+                <source>Rubén</source>
+            </trans-unit>
+            <trans-unit datatype="html" id="valuations">
+                <context-group>
+                    <context context-type="linenumber">1</context>
+                    <context context-type="sourcefile">app/app.component.ts</context>
+                </context-group>
+                <source id="bbb">Valuations</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

@@ -14,14 +14,24 @@
         xalan:indent-amount="4"/>
 
     <xsl:strip-space elements="*"/>
-    
-    <xsl:template match="node()|@*">
+
+    <xsl:template match="/">
+        <xsl:apply-templates select="@*|node()"/>
+    </xsl:template> 
+
+    <xsl:template match="node()">
         <xsl:copy>
-            <xsl:apply-templates select="node()|@*">
-                <xsl:apply-templates select="@*">
-                    <xsl:sort select="name()"/>
-                </xsl:apply-templates>
+            <xsl:apply-templates select="@*">
+               <xsl:sort select="local-name()"/>
             </xsl:apply-templates>
+             <xsl:apply-templates select="node()">
+               <xsl:sort select="local-name()"/>
+            </xsl:apply-templates>
+        </xsl:copy>
+    </xsl:template>
+
+    <xsl:template match="@*">
+        <xsl:copy>
         </xsl:copy>
     </xsl:template>
 
@@ -33,16 +43,29 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="xliff:trans-unit/*">
-        <!-- <xsl:copy> -->
-            <!-- <xsl:apply-templates select="node()">
-                <xsl:sort select="@id"/>
-            </xsl:apply-templates> -->
-             <!-- <xsl:for-each select="catalog/cd"> -->
-        <!-- </xsl:copy> -->
-        <xsl:for-each select=".">
-            <xsl:value-of select="node()"/>
-        </xsl:for-each>
+    <xsl:template match="xliff:trans-unit">
+        <xsl:copy>
+            <xsl:apply-templates select="@*">
+                <xsl:sort select="local-name()"/>
+            </xsl:apply-templates>
+            <xsl:apply-templates select="node()">
+                <xsl:sort select="local-name()"/>
+            </xsl:apply-templates>
+        </xsl:copy>
+    </xsl:template>
+
+    <!-- <xsl:template match="xliff:source">
+        <xsl:copy>
+            <xsl:apply-templates select="node()">
+        </xsl:copy>   
+    </xsl:template> -->
+
+    <xsl:template match="xliff:context-group">
+        <xsl:copy>
+            <xsl:apply-templates select="node()">
+                <xsl:sort select="@context-type"/>
+            </xsl:apply-templates>
+        </xsl:copy>
     </xsl:template>
 
 </xsl:stylesheet>

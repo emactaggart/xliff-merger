@@ -3,8 +3,8 @@
     <file source-language="en" datatype="plaintext" original="ng2.template">
         <body>
             <trans-unit id="valuations" datatype="html">
-                <source>Valuations</source>
-                <context-group purpose="location">
+                <source id="bbb">Valuations</source>
+                <context-group purpose="location" id="aaa">
                     <context context-type="sourcefile">app/app.component.ts</context>
                     <context context-type="linenumber">1</context>
                 </context-group>
