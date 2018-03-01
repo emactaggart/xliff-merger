@@ -18,7 +18,7 @@
 
     <xsl:variable name="other" select="document('other.xlf')" />
 
-    <xsl:template match="/xliff:xliff/file/body">
+    <!-- <xsl:template match="/xliff:xliff/file/body">
          <xliff
             version="1.2" 
             xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" 
@@ -29,6 +29,15 @@
                     </body>
                 </file>
         </xliff>
+    </xsl:template>  -->
+
+    <xsl:template match="/*">
+        <xsl:copy>
+            <xsl:copy-of select="document('')/*/namespace::mc"/>
+            <!-- <xsl:copy-of select="document('')/*/namespace::xsi"/> -->
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates/>
+        </xsl:copy>
     </xsl:template> 
 
     <xsl:template match="node()">
