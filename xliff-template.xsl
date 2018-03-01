@@ -18,12 +18,16 @@
 
     <xsl:variable name="other" select="document('other.xlf')" />
 
-    <xsl:template match="/xliff:xliff">
+    <xsl:template match="/xliff:xliff/file/body">
          <xliff
             version="1.2" 
             xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" 
             xmlns:mc="multicorpora:xliffeditor2:xliff-extension">
-                <xsl:apply-templates select="node()"/>
+                <file datatype="plaintext" original="ng2.template" source-language="en">
+                    <body>
+                        <xsl:apply-templates select="node()"/>
+                    </body>
+                </file>
         </xliff>
     </xsl:template> 
 
@@ -56,18 +60,18 @@
             <xsl:apply-templates select="@*">
                 <xsl:sort select="local-name()"/>
             </xsl:apply-templates>
+            <xsl:apply-templates select="xliff:context-group[@*]"/>
             <xsl:variable name="id" select="@id" />
-            <xsl:copy-of select="context-group"/>
             <xsl:copy-of select="$other//xliff:trans-unit[@id=$id]/mc:props"/>
             <xsl:copy-of select="$other//xliff:trans-unit[@id=$id]/xliff:note"/>
-            <xsl:copy-of select="source"/>
+            <xsl:apply-templates select="xliff:source"/>
             <xsl:copy-of select="$other//xliff:trans-unit[@id=$id]/xliff:target"/>
         </xsl:copy>
     </xsl:template>
 
     <xsl:template match="xliff:context-group">
         <xsl:copy>
-            <xsl:apply-templates select="node()">
+            <xsl:apply-templates select="node()|@*">
                 <xsl:sort select="@context-type"/>
             </xsl:apply-templates>
         </xsl:copy>

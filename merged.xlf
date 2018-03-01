@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<xliff xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:mc="multicorpora:xliffeditor2:xliff-extension" version="1.2">
-    <file xmlns="urn:oasis:names:tc:xliff:document:1.2" datatype="plaintext" original="ng2.template" source-language="en">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file datatype="plaintext" original="ng2.template" source-language="en">
         <body>
             <trans-unit datatype="html" id="ruben">
-                <context-group>
+                <context-group purpose="location">
                     <context context-type="linenumber">77</context>
                     <context context-type="sourcefile">another.ts</context>
                 </context-group>
-                <note from="description" priority="1">Just a note found somewhere in their tool</note>
                 <source>Rubén</source>
             </trans-unit>
             <trans-unit datatype="html" id="valuations">
-                <context-group>
+                <context-group purpose="location" id="aaa">
                     <context context-type="linenumber">1</context>
                     <context context-type="sourcefile">app/app.component.ts</context>
                 </context-group>
-                <source id="bbb">Valuations</source>
-                <target xml:space="preserve">Évaluations</target>
-                <note from="description" priority="1">note in valuations</note>
-                <mc:props>
+                <mc:props xmlns:mc="multicorpora:xliffeditor2:xliff-extension">
                     <mc:prop mc:name="Created by" mc:type="STRING">abrahamt</mc:prop>
                     <mc:prop mc:name="Created date" mc:type="DATE">20180208T194351Z</mc:prop>
                     <mc:prop mc:name="Modified by" mc:type="STRING">abrahamt</mc:prop>
                     <mc:prop mc:name="Modified date" mc:type="DATE">20180208T194351Z</mc:prop>
                 </mc:props>
+                <note xmlns:mc="multicorpora:xliffeditor2:xliff-extension" from="description" priority="1">note in valuations</note>
+                <source id="bbb">Valuations</source>
+                <target xmlns:mc="multicorpora:xliffeditor2:xliff-extension" xml:space="preserve">Évaluations</target>
             </trans-unit>
         </body>
     </file>
