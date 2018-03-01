@@ -18,23 +18,9 @@
 
     <xsl:variable name="other" select="document('other.xlf')" />
 
-    <!-- <xsl:template match="/xliff:xliff/file/body">
-         <xliff
-            version="1.2" 
-            xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" 
-            xmlns:mc="multicorpora:xliffeditor2:xliff-extension">
-                <file datatype="plaintext" original="ng2.template" source-language="en">
-                    <body>
-                        <xsl:apply-templates select="node()"/>
-                    </body>
-                </file>
-        </xliff>
-    </xsl:template>  -->
-
     <xsl:template match="/*">
         <xsl:copy>
             <xsl:copy-of select="document('')/*/namespace::mc"/>
-            <!-- <xsl:copy-of select="document('')/*/namespace::xsi"/> -->
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates/>
         </xsl:copy>
@@ -80,7 +66,10 @@
 
     <xsl:template match="xliff:context-group">
         <xsl:copy>
-            <xsl:apply-templates select="node()|@*">
+            <xsl:apply-templates select="@*">
+               <xsl:sort select="local-name()"/>
+            </xsl:apply-templates>
+            <xsl:apply-templates select="node()">
                 <xsl:sort select="@context-type"/>
             </xsl:apply-templates>
         </xsl:copy>

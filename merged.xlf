@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:mc="multicorpora:xliffeditor2:xliff-extension" version="1.2">
     <file datatype="plaintext" original="ng2.template" source-language="en">
         <body>
             <trans-unit datatype="html" id="ruben">
@@ -10,19 +10,19 @@
                 <source>Rubén</source>
             </trans-unit>
             <trans-unit datatype="html" id="valuations">
-                <context-group purpose="location" id="aaa">
+                <context-group id="aaa" purpose="location">
                     <context context-type="linenumber">1</context>
                     <context context-type="sourcefile">app/app.component.ts</context>
                 </context-group>
-                <mc:props xmlns:mc="multicorpora:xliffeditor2:xliff-extension">
+                <mc:props>
                     <mc:prop mc:name="Created by" mc:type="STRING">abrahamt</mc:prop>
                     <mc:prop mc:name="Created date" mc:type="DATE">20180208T194351Z</mc:prop>
                     <mc:prop mc:name="Modified by" mc:type="STRING">abrahamt</mc:prop>
                     <mc:prop mc:name="Modified date" mc:type="DATE">20180208T194351Z</mc:prop>
                 </mc:props>
-                <note xmlns:mc="multicorpora:xliffeditor2:xliff-extension" from="description" priority="1">note in valuations</note>
+                <note from="description" priority="1">note in valuations</note>
                 <source id="bbb">Valuations</source>
-                <target xmlns:mc="multicorpora:xliffeditor2:xliff-extension" xml:space="preserve">Évaluations</target>
+                <target xml:space="preserve">Évaluations</target>
             </trans-unit>
         </body>
     </file>
