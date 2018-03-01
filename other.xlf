@@ -15,6 +15,7 @@
                     <mc:prop mc:name="Modified by" mc:type="STRING">abrahamt</mc:prop>
                     <mc:prop mc:name="Modified date" mc:type="DATE">20180208T194351Z</mc:prop>
                 </mc:props>
+                <note from="description" priority="1">note in valuations</note>
             </trans-unit>
             <trans-unit datatype="html" id="login">
                 <source xml:space="preserve">Login</source>

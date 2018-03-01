@@ -15,6 +15,7 @@
                     <context context-type="sourcefile">another.ts</context>
                     <context context-type="linenumber">77</context>
                 </context-group>
+                <note from="description" priority="1">Just a note found somewhere in their tool</note>
             </trans-unit>
         </body>
     </file>
