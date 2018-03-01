@@ -56,21 +56,14 @@
             <xsl:apply-templates select="@*">
                 <xsl:sort select="local-name()"/>
             </xsl:apply-templates>
-            <xsl:apply-templates select="node()">
-                <xsl:sort select="local-name()"/>
-            </xsl:apply-templates>
             <xsl:variable name="id" select="@id" />
-            <xsl:copy-of select="$other//xliff:trans-unit[@id=$id]/xliff:target"/>
-            <xsl:copy-of select="$other//xliff:trans-unit[@id=$id]/xliff:note"/>
+            <xsl:copy-of select="context-group"/>
             <xsl:copy-of select="$other//xliff:trans-unit[@id=$id]/mc:props"/>
+            <xsl:copy-of select="$other//xliff:trans-unit[@id=$id]/xliff:note"/>
+            <xsl:copy-of select="source"/>
+            <xsl:copy-of select="$other//xliff:trans-unit[@id=$id]/xliff:target"/>
         </xsl:copy>
     </xsl:template>
-
-    <!-- <xsl:template match="xliff:source">
-        <xsl:copy>
-            <xsl:apply-templates select="node()">
-        </xsl:copy>   
-    </xsl:template> -->
 
     <xsl:template match="xliff:context-group">
         <xsl:copy>
@@ -81,8 +74,3 @@
     </xsl:template>
 
 </xsl:stylesheet>
-<!--
-ToDo:
-     xmlns:mc namespace declaration
-    sort at the end or sort both files
--->
