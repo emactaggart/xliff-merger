@@ -36,8 +36,12 @@ Usage:
 
     Run: node xliff-formatter.js
 
+Todo:
+
+    Change "Usage" sections, file names no longer apply.
+
 Future:
+
  * Hook it up in angular projects.
  * Use yarn instead of npm
  * Find a way to publish this tool to avoid the pre-requisites (https://sunzhongkui.wordpress.com/2013/07/26/create-and-publish-node-js-c-addon/)
- 
