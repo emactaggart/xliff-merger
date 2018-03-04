@@ -16,7 +16,7 @@
 
     <xsl:strip-space elements="*"/>
 
-    <xsl:variable name="other" select="document('messages.fr.xlf')" />
+    <xsl:variable name="other" select="document('other.xlf')" />
 
     <xsl:template match="/*">
         <xsl:copy>
