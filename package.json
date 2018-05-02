@@ -1,8 +1,8 @@
 {
-  "name": "xliff-formatter",
+  "name": "xliff-merger",
   "version": "1.0.0",
   "description": "",
-  "main": "xliff-formatter.js",
+  "main": "xliff-merger.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
